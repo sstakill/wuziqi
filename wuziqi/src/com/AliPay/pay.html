@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vuejs-2.5.16.js"></script>
+</head>
+<body>
+<div id="app">
+
+    <input type="text"/>
+    <a href="{{message}}">{{message}}</a>
+    <a href="{{message}}">{{message}}</a>
+    <a href="http://www.baidu.com">{{message}}</a>
+
+</div>
+
+
+
+
+</body>
+<script>
+ new Vue({
+     el:"#app",
+     data:{
+         message:"http://www.baidu.com",
+         flag:true
+     },
+     methods:{
+         init:function () {
+             alert("hhh")
+         }
+     }
+ })
+</script>
+</html>
